@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Registration Form</title>
+
+        <style>
+            table,tr,td{
+                border-style: none;
+                border-collapse: collapse;
+                border:1px solid black;
+            }
+            .headings{
+               
+                text-decoration: none;
+                text-align: center;
+            }
+            .frame{
+                height:200px;
+                width:400px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+        <table>
+            <section>
+                <tr class="headings">
+                    <th >
+                        <legend> Personal Details  </legend>
+                    </th>    
+                    
+                </tr>
+                <tr>
+                    <td>First Name:*</td>
+                    <td><input type="text" name="first_name" required=""/></td>
+                </tr>
+                <tr>
+                    <td>Last Name:*</td>
+                    <td><input type="text" name="last_name" required=""/></td>
+                </tr>
+    
+                <tr>
+                    <td> Email:*</td>
+                    <td><input type="email" name="email" required=""/></td>
+                </tr>
+    
+                <tr>
+                    <td>Phone Number: </td>
+                    <td><input type="text" name="phone_name" maxlength="10"/></td>
+                </tr>
+            </section>
+            
+            <section>
+            <tr class="headings">
+                <th >
+                    <legend> Account Details </legend>
+                </th>
+                
+            </tr>
+
+            <tr>
+                <td>Username:*</td>
+                <td><input type="text" name="username" required=""/></td>
+            </tr>
+
+            <tr>
+                <td>Password:*</td>
+                <td><input type="password" name="password" required=""/></td>
+            </tr>
+            <tr>
+                <td>Confirm Password:*</td>
+                <td><input type="password" name="confirm_password" required=""/></td>
+            </tr>
+            </section>
+            <section>
+            <tr class="headings">
+                <th>
+                    <legend> Address </legend>
+                </th>
+                
+            </tr>
+            <tr>
+                <td>Address Line 1:*</td>
+                <td><input type="text" name="address1" required=""/></td>
+            </tr>
+            <tr>
+                <td>Address Line 2:*</td>
+                <td><input type="text" name="address2" required=""/></td>
+            </tr>
+            <tr>
+                <td>City:*</td>
+                <td><input type="text" name="city" required=""/></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td>
+                    <select>
+                        <option value="telangana">Telangana</option>
+                        <option value="uttar_pradesh">Uttar Pradesh</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="jharkhand">Jharkhand</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>ZIP Code:*</td>
+                <td><input type="text" name="zip_code" required=""/></td>
+            </tr>
+        </section>
+        <section>
+            <tr class="headings">
+                <th>
+                    <legend> Preferences </legend>
+                </th>
+                
+            </tr>
+            <tr>
+                <td>Gender:*</td>
+                <td>
+                    <input type="radio" id="male" value="Male" name="gender" />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" value="Female" name="gender" />
+                    <label for="female">Female</label>
+                    <input type="radio" id="others" value="Others" name="gender" />
+                    <label for="others">others</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Subscribe Newsletter:</td>
+                <td><input type="checkbox" name="confirmation" required=""/></td>
+            </tr>
+            <tr>
+                <td>Short Bio:</td>
+                <td>
+                    <textarea type="text" name="short_bio" placeholder="Tell us about yourself...."></textarea>
+                </td>
+            </tr>
+        </section>
+        <section>   
+            <tr>
+                <th>
+                    <input type="checkbox" value="agree" name="terms_condition" >
+                    <label for="terms_condition"> I agree to the terms and conditions </label>
+                </th>
+            </tr>
+        </section>
+        <section>
+            <tr> 
+                <th>
+   
+                    <button type="button" name="register" > Register </button>
+                    <button type="button" name="reset" > Reset </button>
+             
+                </th>
+            </tr>
+        </section>
+    </table>
+
+
+    </form>
+    <iframe srcdoc="Terms and Conditions
+    Welcome to our registration portal. By registering, you agree to the following terms and conditions:
+    • You must provide accurate and complete information.
+    . Your password must be kept confidential.
+    . We reserve the right to cancel accounts that violate our policies. . All data is processed according to our privacy policy.
+    . Use the form responsibly."></iframe>
+    </body>
+</html>
